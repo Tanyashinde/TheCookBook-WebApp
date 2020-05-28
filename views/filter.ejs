@@ -1,0 +1,189 @@
+<html>
+
+<head>
+    <style>
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        td,
+        th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+        .button {
+            background-color: forestgreen;
+            /* Green */
+            border: none;
+            color: white;
+            padding: 16px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            transition-duration: 0.4s;
+            cursor: pointer;
+        }
+
+        .button1 {
+            background-color: white;
+            color: black;
+            border: 2px solid forestgreen;
+        }
+
+        .button1:hover {
+            background-color: #4CAF50;
+            color: white;
+        }
+    </style>
+
+</head>
+
+<body>
+    <center>
+    <h2>Apply filters</h2>
+    <form method="post" action="/filters">
+        <table style="width:50%">
+            <tr>
+                <th>Categories</th>
+                <th>Area</th>
+            </tr>
+            <tr>
+                <td> <input type="radio" id="category" name="category" value="Breakfast">
+                    <label for="Breakfast">Breakfast</label>
+                </td>
+                <td>
+                    <input type="radio" id="Area" name="Area" value="Indian">
+                    <label for="Indian">Indian</label>
+                </td>
+            </tr>
+            <tr>
+                <td> <input type="radio" id="category" name="category" value="Starter">
+                    <label for="Starter">Starter</label>
+                </td>
+                <td>
+                    <input type="radio" id="Area" name="Area" value="American">
+                    <label for="American">American</label>
+                </td>
+            </tr>
+            <tr>
+                <td> <input type="radio" id="category" name="category" value="Chicken">
+                    <label for="Chicken">Chicken</label>
+                </td>
+                <td>
+                    <input type="radio" id="Area" name="Area" value="British">
+                    <label for="British">British</label>
+                </td>
+            </tr>
+            <tr>
+                <td> <input type="radio" id="category" name="category" value="Pasta">
+                    <label for="Pasta">Pasta</label>
+                </td>
+                <td>
+                    <input type="radio" id="Area" name="Area" value="Canadian">
+                    <label for="Canadian">Canadian</label>
+                </td>
+            </tr>
+            <tr>
+                <td> <input type="radio" id="category" name="category" value="Seafood">
+                    <label for="Seafood">Seafood</label>
+                </td>
+                <td>
+                    <input type="radio" id="Area" name="Area" value="Chinese">
+                    <label for="Chinese">Chinese</label>
+                </td>
+            </tr>
+            <tr>
+                <td> 
+                    <input type="radio" id="category" name="category" value="Vegetarian">
+                    <label for="Vegetarian">Vegetarian</label>
+                </td>
+                <td>
+                    <input type="radio" id="Area" name="Area" value="Dutch">
+                    <label for="Dutch">Dutch</label>
+                </td>
+            </tr>
+            <tr>
+                <td> 
+                    <input type="radio" id="category" name="category" value="Vegan">
+                    <label for="Vegan">Vegan</label>
+                </td>
+                <td>
+                    <input type="radio" id="Area" name="Area" value="Egyptian">
+                    <label for="Egyptian">Egyptian</label>
+                </td>
+            </tr>
+            <tr>
+                <td> 
+                    <input type="radio" id="category" name="category" value="Dessert">
+                    <label for="Dessert">Dessert</label>
+                </td>
+                <td>
+                    <input type="radio" id="Area" name="Area" value="French">
+                    <label for="French">French</label>
+                </td>
+            </tr>
+            <tr>
+                <td> 
+                    <input type="radio" id="category" name="category" value="Pork">
+                    <label for="Pork">Pork</label>
+                </td>
+                <td>
+                    <input type="radio" id="Area" name="Area" value="Greek">
+                    <label for="Greek">Greek</label>
+                </td>
+            </tr>
+            <tr>
+                <td> 
+                    <input type="radio" id="category" name="category" value="Side">
+                    <label for="Side">Side</label>
+                </td>
+                <td>
+                    <input type="radio" id="Area" name="Area" value="Thai">
+                    <label for="Thai">Thai</label>
+                </td>
+            </tr>
+            <tr>
+                <td> 
+                    
+                </td>
+                <td>
+                    <input type="radio" id="Area" name="Area" value="Mexican">
+                    <label for="Mexican">Mexican</label>
+                </td>
+            </tr>
+            <tr>
+                <td> 
+                    
+                </td>
+                <td>
+                    <input type="radio" id="Area" name="Area" value="Spanish">
+                    <label for="Spanish">Spanish</label>
+                </td>
+            </tr>
+            <tr>
+                <td> 
+                    
+                </td>
+                <td>
+                    <input type="radio" id="Area" name="Area" value="Italian">
+                    <label for="Italian">Italian</label>
+                </td>
+            </tr>
+           
+        </table>
+        &nbsp&nbsp&nbsp&nbsp&nbsp
+        <button class="button button1" type="submit" name="search" value="search">Search</button>
+    </form>
+    </center>
+</body>
+
+</html>
