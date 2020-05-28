@@ -211,6 +211,34 @@ app.post('/signupaction', function (req, response) {
 
 })
 
+app.post('/add_recipe',function(req,response){
+    console.log(req.body.Rname)
+    console.log(req.body.category)
+    console.log(req.body.description)
+    console.log(req.files.Rpic)
+    console.log(user)
+
+
+    //var filename = req.files.Rpic.filename;
+    var filepath = req.files.Rpic.file;
+
+    var file = fs.readFileSync(filepath);
+    file = new Buffer(file).toString('base64');
+
+    if(user){
+        firebase
+              .database()
+              .ref("Recipies/" + user)
+              .set({
+                RecipeName: req.body.Rname,
+                Category: req.body.category,
+                Description: req.body.description,
+                imgStr: file
+              })
+              .then(() =>{response.render('index',{})});
+    }
+})
+
 app.listen(8080, function () {
     console.log("server started on 8080...");
 })
